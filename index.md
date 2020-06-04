@@ -35,5 +35,8 @@ https://stackoverflow.com/questions/13220566/linux-raw-input-without-root-permis
 ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="0914", MODE="664", GROUP="tablet"
 ```
 
+Be very careful to only use spaces and use this exact formatting. For me it didn't work at first. I had spaces after the = sign, maybe that was the problem. Note that the vendor-id and product-id are the ones of my tablet. 
 
-2. 
+2. You can check if it works by running `ls -l /dev/input`
+
+ 
