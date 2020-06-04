@@ -19,7 +19,8 @@ __DISCLAIMER: I don't really have an idea what I'm doing. Everything is learning
 The tablet is a USB device that writes to __/dev/input/event{number}__.
 
 #### Reading the input:
-One way of reading the input is by the command-line program *evtest*. The problem is that __/dev/input/event{number}__ is restricted for the normal user. Since we need access to this, we need to make the tablet readable to the user. 
+One way of reading the input is by the command-line program *evtest*.
+The problem is that __/dev/input/event{number}__ is restricted for the normal user. Since we need access to this, we need to make the tablet readable to the user. 
 
 
 #### Making the tablet input accessible for the user:
@@ -28,11 +29,10 @@ The principle for this is outlined in the following stackoverflow post:
 
 https://stackoverflow.com/questions/13220566/linux-raw-input-without-root-permission
 
-1. We create a suitable udev rule: The file is called 99-tablet.rules. The directory is __/etc/udev/rules.d/__. Note: The exact filename is not important, as long as it ends in *.rules* . Creating this file requires __root__ privileges, but only one time.
+1. We create a suitable udev rule: The file is called **99-tablet.rules**. The directory is __/etc/udev/rules.d/__. Note: The exact filename is not important, as long as it ends in *.rules* . Creating this file requires __root__ privileges, but only one time.
 
-'''
-	ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="0914", MODE="664", GROUP="tablet"
+'''ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="0914", MODE="664", GROUP="tablet"
 
 
-Nota bene: It is impor
+
 2. 
