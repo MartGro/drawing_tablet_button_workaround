@@ -33,7 +33,7 @@ https://stackoverflow.com/questions/13220566/linux-raw-input-without-root-permis
 
 '''text
 ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="0914", MODE="664", GROUP="tablet"
-
+'''
 
 
 2. 
