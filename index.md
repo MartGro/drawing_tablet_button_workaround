@@ -1,37 +1,13 @@
-## Welcome to GitHub Pages
+# Problem statement
+I recently bought a XP-PEN Star G640 drawing tablet. 
+On my Ubuntu 16.04 machine, the DIGImend drivers for non-Wacom drawing tablets do not work (they cause a black screen during boot). Luckily, even without installing any driver, the tablet almost works. The only problem is that the rocking button is not recognized correctly: Pressing the lower button leads to a middle mouse click (which is OK), but the upper button maps to a left click. This means it has the same behavior as "clicking" with the stylus itself.
 
-You can use the [editor on GitHub](https://github.com/MartGro/drawing_tablet_button_workaround/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+The problem is that with this configuration you end up with basically one button. For really using the tablet, you need two: one for erasing and one for moving around. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+__TLDR__: G640 Tablet has one wrong keymapping on the upper rocking button: Left mouse click instead of right mouse click.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+# Idea
 
-```markdown
-Syntax highlighted code block
+# Done so far: 
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/MartGro/drawing_tablet_button_workaround/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
