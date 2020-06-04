@@ -31,7 +31,7 @@ https://stackoverflow.com/questions/13220566/linux-raw-input-without-root-permis
 
 1. We create a suitable udev rule: The file is called **99-tablet.rules**. The directory is __/etc/udev/rules.d/__. Note: The exact filename is not important, as long as it ends in *.rules* . Creating this file requires __root__ privileges, but only one time.
 
-```text
+```
 ATTRS{idVendor}=="28bd", ATTRS{idProduct}=="0914", MODE="664", GROUP="tablet"
 ```
 
